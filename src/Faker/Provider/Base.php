@@ -587,4 +587,63 @@ class Base
     {
         return new ValidGenerator($this->generator, $validator, $maxRetries);
     }
+
+
+
+    /**
+     * @param $data
+     * @param int $count
+     * @return array
+     */
+    public function arrayOf($data, $count = 1) {
+        $result = array();
+        for ($i = 0; $i < $count; $i++) {
+            if (is_object($data)) {
+                $class = get_class($data);
+                $result[] = new $class();
+            }else{
+                $result[] = $data;
+            }
+        }
+
+        return $result;
+    }
+
+    public function numberBetweens($min, $max, $count = 2)
+    {
+        $result = array();
+        for ($i=0; $i < $count; $i++) {
+            $result[] = static::numberBetween($min, $max);
+        }
+
+        return $result;
+    }
+
+    public function orientId()
+    {
+        return '#'.static::numberBetween(10, 100).":".static::numberBetween(10, 1000);
+    }
+
+    public function randomId()
+    {
+        $orientIds = $this->arrayOf($this->orientId(), static::numberBetween(1, 10));
+        $customIds = $this->arrayOf(static::numberBetween(1, 100), static::numberBetween(1, 10));
+
+        return static::randomElement(array_merge($orientIds, $customIds));
+    }
+
+    public function sumChilds($arr = array(), $childNode)
+    {
+        $result = 0;
+
+        foreach ($arr as $key => $obj) {
+            if ($obj->$childNode) {
+                $result += $obj->$childNode;
+            }
+        }
+
+        return $result;
+    }
+
+
 }

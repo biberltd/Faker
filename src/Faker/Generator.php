@@ -192,6 +192,11 @@ namespace Biberltd\Faker;
  * @method int|boolean randomLanguage($count = 1, $isArray = false)
  * @method null courseCode()
  *
+ * @method object|integer arrayOf($data, $count = 1)
+ * @method integer|integer|integer numberBetweens($min, $max, $count = 2)
+ * @method null orientId()
+ * @method null randomId()
+ * @method array|string sumChilds($arr = [], $childNode)
  *
  */
 class Generator
