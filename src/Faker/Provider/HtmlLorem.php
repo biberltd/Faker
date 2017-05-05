@@ -2,8 +2,8 @@
 
 namespace Biberltd\Faker\Provider;
 
-use Faker\Generator;
-use Faker\UniqueGenerator;
+use \Biberltd\Faker\Generator;
+use \Biberltd\Faker\UniqueGenerator;
 
 class HtmlLorem extends Base
 {
