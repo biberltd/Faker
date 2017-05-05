@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Biberltd\Faker\Provider\tr_TR;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Biberltd\Faker\Provider\PhoneNumber
 {
     protected static $formats = array(
         '050########',

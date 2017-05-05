@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\Propel;
+namespace Biberltd\Faker\ORM\Propel;
 
 /**
  * Service class for populating a database using the Propel ORM.
@@ -13,9 +13,9 @@ class Populator
     protected $quantities = array();
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Biberltd\Faker\Generator $generator
      */
-    public function __construct(\Faker\Generator $generator)
+    public function __construct(\Biberltd\Faker\Generator $generator)
     {
         $this->generator = $generator;
     }
@@ -23,13 +23,13 @@ class Populator
     /**
      * Add an order for the generation of $number records for $entity.
      *
-     * @param mixed $entity A Propel ActiveRecord classname, or a \Faker\ORM\Propel\EntityPopulator instance
+     * @param mixed $entity A Propel ActiveRecord classname, or a \Biberltd\Faker\ORM\Propel\EntityPopulator instance
      * @param int   $number The number of entities to populate
      */
     public function addEntity($entity, $number, $customColumnFormatters = array(), $customModifiers = array())
     {
-        if (!$entity instanceof \Faker\ORM\Propel\EntityPopulator) {
-            $entity = new \Faker\ORM\Propel\EntityPopulator($entity);
+        if (!$entity instanceof \Biberltd\Faker\ORM\Propel\EntityPopulator) {
+            $entity = new \Biberltd\Faker\ORM\Propel\EntityPopulator($entity);
         }
         $entity->setColumnFormatters($entity->guessColumnFormatters($this->generator));
         if ($customColumnFormatters) {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\ORM\Spot;
+namespace Biberltd\Faker\ORM\Spot;
 
-use Faker\Generator;
-use Faker\Guesser\Name;
+use Biberltd\Faker\Generator;
+use Biberltd\Faker\Guesser\Name;
 use Spot\Locator;
 use Spot\Mapper;
 use Spot\Relation\BelongsTo;

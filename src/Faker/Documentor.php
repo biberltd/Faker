@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker;
+namespace Biberltd\Faker;
 
 class Documentor
 {

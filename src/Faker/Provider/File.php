@@ -1,5 +1,5 @@
 <?php
-namespace Faker\Provider;
+namespace Biberltd\Faker\Provider;
 
 class File extends Base
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\Doctrine;
+namespace Biberltd\Faker\ORM\Doctrine;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\Persistence\Mapping\ClassMetadata;
@@ -87,13 +87,13 @@ class EntityPopulator
     }
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Biberltd\Faker\Generator $generator
      * @return array
      */
-    public function guessColumnFormatters(\Faker\Generator $generator)
+    public function guessColumnFormatters(\Biberltd\Faker\Generator $generator)
     {
         $formatters = array();
-        $nameGuesser = new \Faker\Guesser\Name($generator);
+        $nameGuesser = new \Biberltd\Faker\Guesser\Name($generator);
         $columnTypeGuesser = new ColumnTypeGuesser($generator);
         foreach ($this->class->getFieldNames() as $fieldName) {
             if ($this->class->isIdentifier($fieldName) || !$this->class->hasField($fieldName)) {

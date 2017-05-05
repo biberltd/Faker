@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Biberltd\Faker\Provider\tr_TR;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Biberltd\Faker\Provider\Address
 {
     protected static $buildingNumber = array('###', '##', '#');
 
@@ -86,8 +86,27 @@ class Address extends \Faker\Provider\Address
         "{{streetAddress}}\n{{postcode}} {{city}}",
     );
 
+    protected static $districts = [
+        'Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky[D]','Louisiana','Maine','Maryland','Massachusetts[E]','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania[F]','Rhode Island[G]','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia[H]','Washington','West Virginia','Wisconsin','Wyoming'
+    ];
+
     public function cityName()
     {
         return static::randomElement(static::$cityNames);
+    }
+
+    public function district()
+    {
+        return static::randomElement(static::$districts);
+    }
+
+    public function addresses($count = 2)
+    {
+        $result = array();
+        for ($i=0; $i<$count; $i++) {
+            $result[] = static::address();
+        }
+
+        return $result;
     }
 }

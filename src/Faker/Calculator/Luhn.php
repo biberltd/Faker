@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Calculator;
+namespace Biberltd\Faker\Calculator;
 
 use InvalidArgumentException;
 

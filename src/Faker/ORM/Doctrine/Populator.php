@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\Doctrine;
+namespace Biberltd\Faker\ORM\Doctrine;
 
 use Doctrine\Common\Persistence\ObjectManager;
 
@@ -17,10 +17,10 @@ class Populator
     protected $generateId = array();
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Biberltd\Faker\Generator $generator
      * @param ObjectManager|null $manager
      */
-    public function __construct(\Faker\Generator $generator, ObjectManager $manager = null)
+    public function __construct(\Biberltd\Faker\Generator $generator, ObjectManager $manager = null)
     {
         $this->generator = $generator;
         $this->manager = $manager;
@@ -34,7 +34,7 @@ class Populator
      */
     public function addEntity($entity, $number, $customColumnFormatters = array(), $customModifiers = array(), $generateId = false)
     {
-        if (!$entity instanceof \Faker\ORM\Doctrine\EntityPopulator) {
+        if (!$entity instanceof \Biberltd\Faker\ORM\Doctrine\EntityPopulator) {
             if (null === $this->manager) {
                 throw new \InvalidArgumentException("No entity manager passed to Doctrine Populator.");
             }

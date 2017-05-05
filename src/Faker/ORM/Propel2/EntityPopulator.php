@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\ORM\Propel2;
+namespace Biberltd\Faker\ORM\Propel2;
 
-use \Faker\Provider\Base;
+use \Biberltd\Faker\Provider\Base;
 use \Propel\Runtime\Map\ColumnMap;
 
 /**
@@ -51,17 +51,17 @@ class EntityPopulator
     }
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Biberltd\Faker\Generator $generator
      * @return array
      */
-    public function guessColumnFormatters(\Faker\Generator $generator)
+    public function guessColumnFormatters(\Biberltd\Faker\Generator $generator)
     {
         $formatters = array();
         $class = $this->class;
         $peerClass = $class::TABLE_MAP;
         $tableMap = $peerClass::getTableMap();
-        $nameGuesser = new \Faker\Guesser\Name($generator);
-        $columnTypeGuesser = new \Faker\ORM\Propel2\ColumnTypeGuesser($generator);
+        $nameGuesser = new \Biberltd\Faker\Guesser\Name($generator);
+        $columnTypeGuesser = new \Biberltd\Faker\ORM\Propel2\ColumnTypeGuesser($generator);
         foreach ($tableMap->getColumns() as $columnMap) {
             // skip behavior columns, handled by modifiers
             if ($this->isColumnBehavior($columnMap)) {
@@ -137,10 +137,10 @@ class EntityPopulator
     }
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Biberltd\Faker\Generator $generator
      * @return array
      */
-    public function guessModifiers(\Faker\Generator $generator)
+    public function guessModifiers(\Biberltd\Faker\Generator $generator)
     {
         $modifiers = array();
         $class = $this->class;

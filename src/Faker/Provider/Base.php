@@ -1,26 +1,26 @@
 <?php
 
-namespace Faker\Provider;
+namespace Biberltd\Faker\Provider;
 
-use Faker\Generator;
-use Faker\DefaultGenerator;
-use Faker\UniqueGenerator;
-use Faker\ValidGenerator;
+use Biberltd\Faker\Generator;
+use Biberltd\Faker\DefaultGenerator;
+use Biberltd\Faker\UniqueGenerator;
+use Biberltd\Faker\ValidGenerator;
 
 class Base
 {
     /**
-     * @var \Faker\Generator
+     * @var \Biberltd\Faker\Generator
      */
     protected $generator;
 
     /**
-     * @var \Faker\UniqueGenerator
+     * @var \Biberltd\Faker\UniqueGenerator
      */
     protected $unique;
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Biberltd\Faker\Generator $generator
      */
     public function __construct(Generator $generator)
     {

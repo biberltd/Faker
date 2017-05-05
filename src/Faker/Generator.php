@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker;
+namespace Biberltd\Faker;
 
 /**
  * @property string $name
@@ -172,6 +172,26 @@ namespace Faker;
  * @property string $colorName
  *
  * @method string randomHtml($maxDepth = 4, $maxWidth = 4)
+ *
+ *
+ * @method null district()
+ * @method int address($count = 2)
+ *
+ * @method int emails($count = 2)
+ * @property array $languages
+ *
+ * @method null university()
+ * @method null applicationSuffix()
+ * @method null department()
+ * @method null roomType()
+ * @method null staffType()
+ * @method null accountType()
+ * @method null accountTypeKey()
+ * @method null academicUnit()
+ * @method null academicUnitKey()
+ * @method int|boolean randomLanguage($count = 1, $isArray = false)
+ * @method null courseCode()
+ *
  *
  */
 class Generator

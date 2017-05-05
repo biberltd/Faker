@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Biberltd\Faker\Provider\tr_TR;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Biberltd\Faker\Provider\Person
 {
     /**
      * @var array Turkish person name formats.

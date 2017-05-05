@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider;
+namespace Biberltd\Faker\Provider;
 
 class UserAgent extends Base
 {

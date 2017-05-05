@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider;
+namespace Biberltd\Faker\Provider;
 
 /**
  * Depends on image generation from http://lorempixel.com/

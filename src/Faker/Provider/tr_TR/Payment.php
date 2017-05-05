@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Biberltd\Faker\Provider\tr_TR;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Biberltd\Faker\Provider\Payment
 {
     /**
      * International Bank Account Number (IBAN)

@@ -1,12 +1,16 @@
 <?php
 
-namespace Faker;
+namespace Biberltd\Faker;
 
 class Factory
 {
     const DEFAULT_LOCALE = 'tr_TR';
 
-    protected static $defaultProviders = array('Address', 'Barcode', 'Biased', 'Color', 'Company', 'DateTime', 'File', 'HtmlLorem', 'Image', 'Internet', 'Lorem', 'Miscellaneous', 'Payment', 'Person', 'PhoneNumber', 'Text', 'UserAgent', 'Uuid');
+    protected static $defaultProviders = array(
+        'Address', 'Barcode', 'Biased', 'Color', 'Company', 'DateTime',
+        'File', 'HtmlLorem', 'Image', 'Internet', 'Lorem', 'Miscellaneous',
+        'Payment', 'Person', 'PhoneNumber', 'Text', 'UserAgent', 'Uuid',
+        'Institution');
 
     /**
      * Create a new generator
@@ -53,7 +57,7 @@ class Factory
      */
     protected static function findProviderClassname($provider, $locale = '')
     {
-        $providerClass = 'Faker\\' . ($locale ? sprintf('Provider\%s\%s', $locale, $provider) : sprintf('Provider\%s', $provider));
+        $providerClass = 'Biberltd\\Faker\\' . ($locale ? sprintf('Provider\%s\%s', $locale, $provider) : sprintf('Provider\%s', $provider));
         if (class_exists($providerClass, true)) {
             return $providerClass;
         }

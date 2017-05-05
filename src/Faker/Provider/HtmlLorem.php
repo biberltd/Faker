@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider;
+namespace Biberltd\Faker\Provider;
 
 use Faker\Generator;
 use Faker\UniqueGenerator;

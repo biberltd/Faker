@@ -1,12 +1,12 @@
 <?php
 
-namespace Faker\ORM\CakePHP;
+namespace Biberltd\Faker\ORM\CakePHP;
 
 class ColumnTypeGuesser
 {
     protected $generator;
 
-    public function __construct(\Faker\Generator $generator)
+    public function __construct(\Biberltd\Faker\Generator $generator)
     {
         $this->generator = $generator;
     }

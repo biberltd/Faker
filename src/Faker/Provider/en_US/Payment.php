@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Faker\Provider\en_US;
+namespace Biberltd\Faker\Provider\en_US;
 
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Biberltd\Faker\Provider\Payment
 {
     public function bankAccountNumber()
     {

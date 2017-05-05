@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker;
+namespace Biberltd\Faker;
 
 /**
  * This generator returns a default value for all called properties

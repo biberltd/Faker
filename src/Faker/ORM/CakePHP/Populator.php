@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\CakePHP;
+namespace Biberltd\Faker\ORM\CakePHP;
 
 class Populator
 {

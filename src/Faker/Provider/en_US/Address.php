@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_US;
+namespace Biberltd\Faker\Provider\en_US;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Biberltd\Faker\Provider\Address
 {
     protected static $cityPrefix = array('North', 'East', 'West', 'South', 'New', 'Lake', 'Port');
     protected static $citySuffix = array('town', 'ton', 'land', 'ville', 'berg', 'burgh', 'borough', 'bury', 'view', 'port', 'mouth', 'stad', 'furt', 'chester', 'mouth', 'fort', 'haven', 'side', 'shire');

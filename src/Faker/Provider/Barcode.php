@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider;
+namespace Biberltd\Faker\Provider;
 
 /**
  * @see http://en.wikipedia.org/wiki/EAN-13

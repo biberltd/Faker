@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\ORM\Spot;
+namespace Biberltd\Faker\ORM\Spot;
 
-use Faker\Generator;
+use Biberltd\Faker\Generator;
 
 class ColumnTypeGuesser
 {
