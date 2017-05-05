@@ -1,5 +1,5 @@
 {
-    "name": "fzaninotto/faker",
+    "name": "biberltd/faker",
     "type": "library",
     "description": "Faker is a PHP library that generates fake data for you.",
     "keywords": ["faker", "fixtures", "data"],
@@ -7,6 +7,11 @@
     "authors": [
         {
             "name": "François Zaninotto"
+        },
+        {
+            "name": "Tayfun Temizel",
+            "email": "tayfun.temizel@bodevoffice.com",
+            "role": "Developer"
         }
     ],
     "require": {
