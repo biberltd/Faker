@@ -1,4 +1,8 @@
 vendor
+<<<<<<< HEAD
 composer.lock
 .idea
 index.php
+=======
+composer.lock
+>>>>>>> 627df7f567f83956a5e1d366f7cb9d0086dd9a96
