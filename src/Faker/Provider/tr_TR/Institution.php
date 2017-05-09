@@ -24,7 +24,16 @@ class Institution extends \Biberltd\Faker\Provider\Institution
     );
 
     protected static $roomTypes = array(
-        "Ofis", "Derslik", "Amfi", "Laboratuar", "Depo", "Konferans Salonu", "Spor Salonu", "Toplantı Salonu", "Güvenlik Odası"
+        "ofis" => "Ofis",
+        "class" => "Derslik",
+        "amphi" => "Amfi",
+        "lab" => "Laboratuar",
+        "storage-room" => "Depo",
+        "conference-room" => "Konferans Salonu",
+        "sports-hall" => "Spor Salonu",
+        "meeting-room" => "Toplantı Salonu",
+        "security-room" => "Güvenlik Odası",
+        "stage" => "Sahne"
     );
 
     protected static $staffTypes = array(
