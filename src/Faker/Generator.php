@@ -174,30 +174,30 @@ namespace Biberltd\Faker;
  * @method string randomHtml($maxDepth = 4, $maxWidth = 4)
  *
  *
- * @method null district()
+ * @method district()
  * @method int address($count = 2)
  *
  * @method int emails($count = 2)
  * @property array $languages
  *
- * @method null university()
- * @method null applicationSuffix()
- * @method null department()
- * @method null roomType()
- * @method null roomTypeSlug()
+ * @method university()
+ * @method applicationSuffix()
+ * @method department()
+ * @method roomType()
+ * @method roomTypeSlug()
  * @method staffType()
  * @method staffTypeKey()
- * @method null accountType()
- * @method null accountTypeKey()
- * @method null academicUnit()
- * @method null academicUnitKey()
+ * @method accountType()
+ * @method accountTypeKey()
+ * @method academicUnit()
+ * @method academicUnitKey()
  * @method int|boolean randomLanguage($count = 1, $isArray = false)
- * @method null courseCode()
+ * @method courseCode()
  *
  * @method object|integer arrayOf($data, $count = 1)
  * @method integer|integer|integer numberBetweens($min, $max, $count = 2)
- * @method null orientId()
- * @method null randomId()
+ * @method orientId()
+ * @method randomId()
  * @method array|string sumChilds($arr = [], $childNode)
  *
  */

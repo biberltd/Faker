@@ -53,7 +53,7 @@ class Institution extends Base
         return static::randomElement(static::$roomTypes);
     }
 
-    public function roomTypeSlug()
+    public function roomTypeKey()
     {
         return static::randomKey(static::$roomTypes);
     }
@@ -63,7 +63,7 @@ class Institution extends Base
         return static::randomElement(static::$staffTypes);
     }
 
-    public function staffTypeSlug()
+    public function staffTypeKey()
     {
         return static::randomKey(static::$staffTypes);
     }
