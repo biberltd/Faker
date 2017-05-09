@@ -184,6 +184,7 @@ namespace Biberltd\Faker;
  * @method null applicationSuffix()
  * @method null department()
  * @method null roomType()
+ * @method null roomTypeSlug()
  * @method null staffType()
  * @method null accountType()
  * @method null accountTypeKey()

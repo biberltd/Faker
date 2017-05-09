@@ -20,6 +20,14 @@ class Institution extends Base
         "1001", "1002", "2001", "2002", "3001", "3002", "4001", "4002"
     );
 
+    protected static $universities = array();
+    protected static $applicationSuffix = array();
+    protected static $departments = array();
+    protected static $roomTypes = array();
+    protected static $staffTypes = array();
+    protected static $accountTypes = array();
+    protected static $academicUnits = array();
+
     public function university()
     {
         return static::randomElement(static::$universities);
@@ -43,6 +51,11 @@ class Institution extends Base
     public function roomType()
     {
         return static::randomElement(static::$roomTypes);
+    }
+
+    public function roomTypeSlug()
+    {
+        return static::randomKey(static::$roomTypes);
     }
 
     public function staffType()
