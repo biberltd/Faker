@@ -24,7 +24,7 @@ class Institution extends \Biberltd\Faker\Provider\Institution
     );
 
     protected static $roomTypes = array(
-        "ofis" => "Ofis",
+        "office" => "Ofis",
         "class" => "Derslik",
         "amphi" => "Amfi",
         "lab" => "Laboratuar",
@@ -37,7 +37,12 @@ class Institution extends \Biberltd\Faker\Provider\Institution
     );
 
     protected static $staffTypes = array(
-        "Rektör", "Dekan", "İdari Görevli", "Öğretim Üyesi", "Araştırma Görevlisi"
+        "president" => "Rektör",
+        "dean" => "Dekan",
+        "administrative-staff" => "İdari Görevli",
+        "academic-staff" => "Öğretim Üyesi",
+        "research-staff" => "Araştırma Görevlisi",
+        "security-staff" => "Güvenlik Görevlisi"
     );
 
     protected static $accountTypes = array(

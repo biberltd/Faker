@@ -63,6 +63,11 @@ class Institution extends Base
         return static::randomElement(static::$staffTypes);
     }
 
+    public function staffTypeSlug()
+    {
+        return static::randomKey(static::$staffTypes);
+    }
+
     public function accountType()
     {
         return static::randomElement(static::$accountTypes);
