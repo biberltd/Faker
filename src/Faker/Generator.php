@@ -184,7 +184,7 @@ namespace Biberltd\Faker;
  * @method applicationSuffix()
  * @method department()
  * @method roomType()
- * @method roomTypeSlug()
+ * @method roomTypeKey()
  * @method staffType()
  * @method staffTypeKey()
  * @method accountType()
@@ -199,6 +199,9 @@ namespace Biberltd\Faker;
  * @method orientId()
  * @method randomId()
  * @method array|string sumChilds($arr = [], $childNode)
+ *
+ * @method county()
+ * @method int counties($count = 1)
  *
  */
 class Generator

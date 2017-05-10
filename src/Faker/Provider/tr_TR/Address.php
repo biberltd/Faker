@@ -69,6 +69,13 @@ class Address extends \Biberltd\Faker\Provider\Address
         'Zambiya','Zimbabve'
     );
 
+    protected static $counties = array(
+        "Esenyurt", "Küçükçekmece", "Bağcılar", "Ümraniye", "Pendik", "Bahçelievler", "Üsküdar", "Sultangazi", "Gaziosmanpaşa",
+        "Maltepe", "Kartal", "Esenler", "Kadıköy", "Kağıthane", "Avcılar", "Ataşehir", "Fatih", "Eyüp", "Sancaktepe", "Başakşehir",
+        "Sultanbeyli", "Güngören", "Beylikdüzü", "Zeytinburnu", "Bayrampaşa", "Şişli", "Beykoz", "Arnavutköy", "Tuzla", "Çekmeköy",
+        "Beyoğlu", "Büyükçekmece", "Bakırköy", "Beşiktaş", "Silivri", "Çatalca", "Şile", "Adalar"
+    );
+
     protected static $cityFormats = array(
         '{{cityName}}',
     );
@@ -105,6 +112,21 @@ class Address extends \Biberltd\Faker\Provider\Address
         $result = array();
         for ($i=0; $i<$count; $i++) {
             $result[] = static::address();
+        }
+
+        return $result;
+    }
+
+    public function county()
+    {
+        return static::randomElement(static::$counties);
+    }
+
+    public function counties($count = 1)
+    {
+        $result = array();
+        for ($i=0; $i<$count; $i++) {
+            $result[] = static::county();
         }
 
         return $result;
